@@ -9,3 +9,82 @@ sign_up_btn.addEventListener("click", () => {
 sign_in_btn.addEventListener("click", () => {
   container.classList.remove("sign-up-mode");
 });
+
+
+//VALIDAÇÃO DE CAMPOS NO SIGN IN
+function validarIN() {
+  // pegando o valor do nome pelos names
+  var Username = document.getElementById("Username");
+  var Password = document.getElementById("Password");
+
+  // verificar se o nome está vazio
+  if (Username.value == "") {
+    alert("Nome não informado");
+
+    // Deixa o input com o focus
+    formularioIN.Username.focus();
+    // retorna a função e não olha as outras linhas
+    return false;
+
+  }
+
+  if (Password.value == "") {
+    alert("Senha não informado");
+
+    // Deixa o input com o focus
+    formularioIN.Password.focus();
+    // retorna a função e não olha as outras linhas
+    return false;
+
+  }
+}
+
+
+
+
+
+//VALIDAÇÃO DE CAMPOS NO SIGN UP
+function validarUP() {
+  // pegando o valor do nome pelos names
+  var UsernameUP = document.getElementById("UsernameUP");
+  var PasswordUP = document.getElementById("PasswordUP");
+  var regex = /^(?=(?:.*?[A-Z]){3})(?=(?:.*?[0-9]){2})(?=(?:.*?[!@#$%*()_+^&}{:;?.]){1})(?!.*\s)[0-9a-zA-Z!@#$%;*(){}_+^&]*$/;
+
+  // verificar se o nome está vazio
+  if (UsernameUP.value == "") {
+    alert("Nome não informado");
+
+    // Deixa o input com o focus
+    formularioUP.UsernameUP.focus();
+    // retorna a função e não olha as outras linhas
+    return false;
+
+  }
+
+
+  if (PasswordUP.value == "") {
+    alert("Senha não informado");
+
+    // Deixa o input com o focus
+    formularioUP.PasswordUP.focus();
+    // retorna a função e não olha as outras linhas
+    return false;
+  }
+  else if(PasswordUP.length < 8)
+  {
+      alert("A senha deve conter no minímo 8 digitos!");
+      formularioUP.PasswordUP.focus();
+      return false;
+  }
+  else if(!regex.exec(PasswordUP))
+  {
+      alert("A senha deve conter no mínimo 3 caracteres em maiúsculo, 2 números e 1 caractere especial!");
+      formularioUP.PasswordUP.focus();
+      return false;
+  }
+  return true;
+}
+
+// (?=(?:.*?[A-Z]){3}) - Mínimo 3 letras maiúsculas
+// (?=(?:.*?[0-9]){2}) - Mínimo 2 números
+// (?=(?:.*?[!@#$%*()_+^&}{:;?.]){1})(?!.*\s)[0-9a-zA-Z!@#;$%*(){}_+^&] - Mínimo 1 caractere especial
