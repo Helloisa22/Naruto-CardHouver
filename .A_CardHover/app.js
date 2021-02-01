@@ -48,7 +48,8 @@ function validarUP() {
   // pegando o valor do nome pelos names
   var UsernameUP = document.getElementById("UsernameUP");
   var PasswordUP = document.getElementById("PasswordUP");
-  var regex = /^(?=(?:.*?[A-Z]){3})(?=(?:.*?[0-9]){2})(?=(?:.*?[!@#$%*()_+^&}{:;?.]){1})(?!.*\s)[0-9a-zA-Z!@#$%;*(){}_+^&]*$/;
+  var Email = document.getElementById("Email");
+  var regex = /^(?=(?:.*?[A-Z]){1})(?=(?:.*?[0-9]){2})/;
 
   // verificar se o nome está vazio
   if (UsernameUP.value == "") {
@@ -70,19 +71,15 @@ function validarUP() {
     // retorna a função e não olha as outras linhas
     return false;
   }
-  else if(PasswordUP.length < 8)
-  {
-      alert("A senha deve conter no minímo 8 digitos!");
-      formularioUP.PasswordUP.focus();
+
+  if(Email.value == ""){
+      alert("Email não foi informado");
+      formularioUP.Email.focus();
       return false;
   }
-  else if(!regex.exec(PasswordUP))
-  {
-      alert("A senha deve conter no mínimo 3 caracteres em maiúsculo, 2 números e 1 caractere especial!");
-      formularioUP.PasswordUP.focus();
-      return false;
-  }
+
   return true;
+    
 }
 
 // (?=(?:.*?[A-Z]){3}) - Mínimo 3 letras maiúsculas

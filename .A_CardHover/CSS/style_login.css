@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
+/*Rem: */
+
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /**/
+    box-sizing: border-box; /*A propriedade CSS box-sizing é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos. É possível usar essa propriedade para emular o comportamento dos navegadores (browsers) que não suportam corretamente a especificação da propriedade CSS box model*/
 }
 
 body, input{
@@ -28,8 +30,8 @@ body, input{
     top: -10%;
     right: 48%;
     transform: translateY(-50%);/**/
-    z-index: 6;
-    transition: 1.8s ease-in-out;
+    z-index: 6;/**/
+    transition: 1.8s ease-in-out; /**/
 }
 
 .forms-container{
@@ -47,9 +49,9 @@ body, input{
     transform: translate(-50%, -50%);/**/
     width: 50%;
     display: grid;
-    grid-template-columns: 1rf;
-    z-index: 5;
-    transition: 1s 0.7s ease-in-out;
+    grid-template-columns: 1rf;/**/
+    z-index: 5;/**/
+    transition: 1s 0.7s ease-in-out;/**/
 }
 
 form{
@@ -100,7 +102,7 @@ form.sign-up-form{
 
 .input-field input{
     background: none;
-    outline: none;
+    outline: none;/**/
     border: none;
     line-height: 1;/**/
     font-weight: 600;
@@ -169,7 +171,7 @@ form.sign-up-form{
     top: 0;
     left: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);/**/
 }
 
 .panel{
@@ -182,7 +184,7 @@ form.sign-up-form{
 }
 
 .left-panel{
-    pointer-events: all;
+    pointer-events: all;/**/
     padding: 3rem 17% 2rem 12%;
 }
 
@@ -265,15 +267,15 @@ form.sign-up-form{
 }
 
 /*Responsive*/
-@media (max-width : 870px){
+@media (max-width: 870px){
     .container{
-        min-width: 800px;
+        min-height: 800px;
         height: 100vh;
     }
 
     .container:before{
         width: 1500px;
-        right: 1500px;
+        height: 1500px;
         left: 30%;
         bottom: 68%;
         transform: translateX(-50%);
@@ -286,7 +288,7 @@ form.sign-up-form{
         width: 100%;
         left: 50%;
         top: 95%;
-        transform: translate(-50%, -100%);
+        transform: translate(-50%,-100%);
         transition: 1s 0.8s ease-in-out;
     }
 
@@ -312,7 +314,7 @@ form.sign-up-form{
     }
 
     .panel p{
-        font-size: 0.7rem;
+        font-size: o.7rem;
         padding: 0.5rem 0;
     }
 
@@ -335,16 +337,16 @@ form.sign-up-form{
         grid-row: 3 / 4;
     }
 
-    .right-panel .content , .right-panel .image{
+    .right-panel .content, .right-panel .image{
         transform: translateY(300px);
     }
 
-    .container.sign-up-mode::before{
+    .container.sign-up-mode:before{
         transform: translate(-50%, 100%);
         bottom: 32%;
         right: initial;
     }
-    
+
     .container.sign-up-mode .left-panel .image
     .container.sign-up-mode .left-panel .content{
         transform: translateY(-300px);
@@ -357,28 +359,21 @@ form.sign-up-form{
     }
 }
 
-@media (max-width: 570px) {
-    form {
-      padding: 0 1.5rem;
+@media(max-width: 570px){
+    form{
+        padding: 0 1.5rem;
     }
-  
-    .image {
-      display: none;
+
+    .image{
+        display: none;
     }
-    .panel .content {
-      padding: 0.5rem 1rem;
+
+    .panel .content{
+        padding: 0.5rem 1rem;
     }
-    .container {
-      padding: 1.5rem;
+
+    .container.sign-up-mode:before{
+        bottom: 28%;
+        left: 50%;
     }
-  
-    .container:before {
-      bottom: 72%;
-      left: 50%;
-    }
-  
-    .container.sign-up-mode:before {
-      bottom: 28%;
-      left: 50%;
-    }
-  }
+}

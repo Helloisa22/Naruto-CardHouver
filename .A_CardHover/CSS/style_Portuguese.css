@@ -1,5 +1,5 @@
 body{
-    margin: 0;
+    margin: 0px;
     padding: 0;
     min-height: 70vh;
     background: #333;
@@ -10,11 +10,14 @@ body{
 }
 
 .container{
+    /*top: 80px;*/
     width: 1200px;
     position: relative;
     display: flex;
     justify-content: space-between;
 }
+
+
 
 .tit{
     position: absolute;
@@ -22,12 +25,25 @@ body{
     color: #fff;
     justify-content: center;
     align-items: center; /**/
-    margin: 0 0 0 350px;
+    margin-top: 80px;
+    left: 28%;
 }
 
 .container .card{
     position: relative;
-    margin-top: 80px;
+    margin-top: 150px;
+}
+
+.container .card.img4 {
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 19%;
+}
+
+.container .card.img5 {
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 58%;
 }
 
 .container .card .face{
@@ -80,24 +96,11 @@ body{
     opacity: 1;
 }
 
-/*Inverte as cores, baseado em porcentagem*/
 .container .card .face.face1 .content img{
-    filter: invert(100%);
+    filter: invert(100%); /*Inverte as cores, baseado em porcentagem*/
     height: 100px;
     max-width: 100px;
     padding-left: 35px;
-}
-
-.container .card.img4 {
-    position: absolute;
-    margin-top: 600px;
-    margin-left: 19%;
-}
-
-.container .card.img5 {
-    position: absolute;
-    margin-top: 600px;
-    margin-left: 58%;
 }
 
 .container .card .face.face1 .content h3{
