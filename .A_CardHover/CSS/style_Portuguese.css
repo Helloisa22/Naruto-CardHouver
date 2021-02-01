@@ -17,7 +17,58 @@ body{
     justify-content: space-between;
 }
 
+a{
+    text-decoration: none;
+}
 
+header{
+    background-color: green;
+    padding: 10px;
+    position: absolute;
+    height: 10%;
+    width: 100px;
+}
+
+.btn-abrir{
+    color: white;
+    font-size: 25px;
+}
+
+nav{
+    height: 50%;
+    width: 0;
+    background: #333;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+
+nav a{
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+}
+
+nav a:hover{
+    color: #333;
+    background: white;
+}
+
+/*
+.cabecalho{
+    margin: 0;
+    padding: 0;
+    background-color: green;
+}
+
+.btn-menu{
+    height: 100%;
+    width: 450px;
+    background-color: green;
+    position: absolute;
+}*/
 
 .tit{
     position: absolute;
