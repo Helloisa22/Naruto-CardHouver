@@ -11,6 +11,9 @@ sign_in_btn.addEventListener("click", () => {
 });
 
 
+//VALIDAÇÕES DE CAMPO
+
+
 //VALIDAÇÃO DE CAMPOS NO SIGN IN
 function validarIN() {
   // pegando o valor do nome pelos names
@@ -38,9 +41,6 @@ function validarIN() {
 
   }
 }
-
-
-
 
 
 //VALIDAÇÃO DE CAMPOS NO SIGN UP

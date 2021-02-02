@@ -22,11 +22,11 @@ a{
 }
 
 header{
-    background-color: green;
+    background-color: #333;
     padding: 10px;
     position: absolute;
-    height: 10%;
-    width: 100px;
+    height: 5%;
+    width: 100%;
 }
 
 .btn-abrir{
@@ -35,7 +35,7 @@ header{
 }
 
 nav{
-    height: 50%;
+    height: 35%;
     width: 0;
     background: #333;
     position: fixed;
@@ -56,33 +56,19 @@ nav a:hover{
     background: white;
 }
 
-/*
-.cabecalho{
-    margin: 0;
-    padding: 0;
-    background-color: green;
-}
-
-.btn-menu{
-    height: 100%;
-    width: 450px;
-    background-color: green;
-    position: absolute;
-}*/
-
 .tit{
     position: absolute;
     font-size: 22px;
     color: #fff;
     justify-content: center;
     align-items: center; /**/
-    margin-top: 80px;
+    margin-top: 45px;
     left: 28%;
 }
 
 .container .card{
     position: relative;
-    margin-top: 150px;
+    margin-top: 110px;
 }
 
 .container .card.img4 {
