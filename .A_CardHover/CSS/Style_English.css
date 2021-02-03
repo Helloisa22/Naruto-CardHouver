@@ -16,19 +16,70 @@ body{
     justify-content: space-between;
 }
 
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #333;
+    padding: 10px;
+    position: absolute;
+    height: 5%;
+    width: 100%;
+}
+
+.btn-abrir{
+    color: white;
+    font-size: 25px;
+}
+
+nav{
+    height: 35%;
+    width: 0;
+    background: #333;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+
+nav a{
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+}
+
+nav a:hover{
+    color: #333;
+    background: white;
+}
+
 .tit{
     position: absolute;
     font-size: 22px;
     color: #fff;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0 350px;
-    padding-right: 0px;
+    margin-top: 45px;
+    left: 28%;
 }
 
 .container .card{
     position: relative;
-    margin-top: 80px;
+    margin-top: 110px;
+}
+
+.container .card.img4 {
+    position: absolute;
+    margin-top: 650px;
+    margin-left: 19%;
+}
+
+.container .card.img5 {
+    position: absolute;
+    margin-top: 650px;
+    margin-left: 58%;
 }
 
 .container .card .face{
@@ -87,18 +138,6 @@ body{
     height: 100px;
     max-width: 100px;
     padding-left: 35px;
-}
-
-.container .card.img4 {
-    position: absolute;
-    margin-top: 650px;
-    margin-left: 19%;
-}
-
-.container .card.img5 {
-    position: absolute;
-    margin-top: 650px;
-    margin-left: 58%;
 }
 
 .container .card .face.face1 .content h3{

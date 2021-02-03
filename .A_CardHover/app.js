@@ -85,3 +85,13 @@ function validarUP() {
 // (?=(?:.*?[A-Z]){3}) - Mínimo 3 letras maiúsculas
 // (?=(?:.*?[0-9]){2}) - Mínimo 2 números
 // (?=(?:.*?[!@#$%*()_+^&}{:;?.]){1})(?!.*\s)[0-9a-zA-Z!@#;$%*(){}_+^&] - Mínimo 1 caractere especial
+
+
+//SIDEBAR (EFEITO DO MENU)
+function abrirMenu(){
+  document.getElementById('menu').style.width = '250px';
+}
+
+function fecharMenu(){
+  document.getElementById('menu').style.width = '0px';
+}
