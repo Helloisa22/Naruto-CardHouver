@@ -22,11 +22,12 @@ a{
 }
 
 header{
-    background-color: #333;
+    background-color: #333;/**/
     padding: 10px;
     position: absolute;
     height: 5%;
     width: 100%;
+    box-shadow:  0px 3px 0px 0px rgb(79, 79, 79) ;
 }
 
 .btn-abrir{
@@ -54,6 +55,13 @@ nav a{
 nav a:hover{
     color: #333;
     background: white;
+}
+
+.img-perfil{
+    filter: invert(100%); /*Inverte as cores, baseado em porcentagem*/
+    width: 50px;    /* largura da imagem */
+    height: 50px;   /*  altura da imagem  */
+    margin-left: 90%; /* margem do topo */
 }
 
 .tit{
