@@ -1,6 +1,6 @@
 # O mundo de Naruto
 
-My First project I decided use my sister's passion to naruto for explain about five countris Shinobi in two languages for trainning my english.🙂
+My First project I decided use my sister's passion per naruto for explain about five countris Shinobi in two languages for trainning my english.🙂
 
 
 # Tecnologias que usei neste projeto
