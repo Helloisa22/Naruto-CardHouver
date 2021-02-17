@@ -1,4 +1,4 @@
-# O mundo de Naruto
+# the world of Naruto
 
 My First project I decided use my sister's passion per naruto for explain about five countris Shinobi in two languages for trainning my english.🙂
 
