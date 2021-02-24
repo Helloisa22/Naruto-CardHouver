@@ -22,16 +22,16 @@
           <div class="signin-signup">
 
             <form action="portuguese.html" class="sign-in-form" name="formularioIN">
-              <h2 class="title">Sign in</h2>
+              <h2 class="title">Entrar</h2>
               <div class="input-field">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Username" id="Username"/>
+                <input type="text" placeholder="Usuário" id="Username"/>
               </div>
               <div class="input-field">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" id="Password" />
+                <input type="password" placeholder="Senha" id="Password" />
               </div>
-              <input  type="submit" value="Login" class="btn solid" onclick="return validarIN()"/>
+              <input  type="submit" value="Entrar" class="btn solid" onclick="return validarIN()"/>
               <p class="social-text">Ou faça login com as redes sociais</p>
               <div class="social-media">
                 <a href="#" class="social-icon">
@@ -49,11 +49,11 @@
               </div>
             </form>
 
-            <form action="portuguese.html" class="sign-up-form" name="formularioUP">
-              <h2 class="title">Sign up</h2>
+            <form action="index.html" class="sign-up-form" name="formularioUP">
+              <h2 class="title">Cadastre-se</h2>
               <div class="input-field">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Username" id="UsernameUP" />
+                <input type="text" placeholder="Usuário" id="UsernameUP" />
               </div>
               <div class="input-field">
                 <i class="fas fa-envelope"></i>
@@ -61,14 +61,23 @@
               </div>
               <div class="input-field">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" id="PasswordUP" />
+                <input type="password" placeholder="Senha" id="PasswordUP" />
               </div>
+
               <div class="input-field">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" id="Password" />
+                <i class="fas fa-chevron-right"></i>
+                <select name="tipo">
+                    <option >Escolha seu Pais:</option>
+                    <option value="País do Fogo">País do Fogo: Vila Oculta da Folha</option>
+                    <option value="País do Vento">País do Vento: Vila Oculta da Areia</option>
+                    <option value="País do Raio">País do Raio: Vila Oculta da Nuvem</option>
+                    <option value="País da Água">País da Água: Vila Oculta da Névoa</option>
+                    <option value="País da Terra">País da Terra: Vila Oculta da Pedra</option>
+                </select>
               </div>
-              <input type="submit" class="btn" value="Sign up" onclick="return validarUP()"/>
-              <p class="social-text">Ou faça login com as redes sociais</p>
+
+              <input type="submit" class="btn" value="Cadastrar" onclick="return validarUP()"/>
+              <p class="social-text">Ou faça o cadastro com as redes sociais</p>
               <div class="social-media">
                 <a href="#" class="social-icon">
                   <i class="fab fa-facebook-f"></i>
@@ -90,26 +99,24 @@
         <div class="panels-container">
           <div class="panel left-panel">
             <div class="content">
-              <h3>New here ?</h3>
+              <h3>Nova(o) aqui ?</h3>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-                ex ratione. Aliquid!
+                Venha aprender e entender mais sobre o Anime Naruto. Entre nesse universo e venha se aventurar com grandes historias e muito poder e pesistência.
               </p>
               <button class="btn transparent" id="sign-up-btn">
-                Sign up
+                Cadastre-se
               </button>
             </div>
             <img src="IMG/Madara.png" class="image" alt="" />
           </div>
           <div class="panel right-panel">
             <div class="content">
-              <h3>One of us ?</h3>
+              <h3>Um de nós ?</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                laboriosam ad deleniti.
+                Entre e aproveite o que á de melhor!
               </p>
               <button class="btn transparent" id="sign-in-btn">
-                Sign in
+                Entrar
               </button>
             </div>
             <img src="IMG/hashirama5.png" class="image" alt="" />

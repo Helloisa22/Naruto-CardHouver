@@ -78,7 +78,7 @@ function validarUP() {
       return false;
   }
 
-  return true;
+  return alert("Cadastro feito com sucesso");
     
 }
 
