@@ -399,7 +399,7 @@ form.sign-up-form{
     }
 
     .container.sign-up-mode:before{
-        bottom: 28%;
+        bottom: 25%;
         left: 50%;
     }
 }
