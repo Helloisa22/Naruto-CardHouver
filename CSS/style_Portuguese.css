@@ -71,7 +71,7 @@ nav a:hover{
     color: #fff;
     justify-content: center;
     align-items: center;
-    top: 45px;
+    top: 55px;
     left: 0;
     width: 100%;
     text-align: center;
@@ -79,7 +79,7 @@ nav a:hover{
 
 .card-container {
     position: relative;
-    margin-top: 110px;
+    margin-top: 160px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -195,4 +195,14 @@ nav a:hover{
     width: 60px;
     height: 40px;
     padding-left: 130px;
+}
+
+@media (max-width: 520px) {
+    .tit{
+        font-size: 18px;
+    }
+
+    .card-container {
+        margin-top: 160px;
+    }
 }
