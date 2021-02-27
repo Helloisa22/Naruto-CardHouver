@@ -25,7 +25,6 @@ header{
     background-color: #333;/**/
     padding: 10px;
     position: absolute;
-    /* height: 5%; */
     height: 55px;
     width: 100%;
     box-shadow:  0px 3px 0px 0px rgb(79, 79, 79);
@@ -66,31 +65,17 @@ nav a:hover{
     margin-left: 90%; /* margem do topo */
 }
 
-/* ================== .tit ================= */
-/* width: 100%, para ficar da largura total da tela */
-/* text-align: center, para o tit ficar centralizado na tela */
-/* ========================================= */
-
-
 .tit{
     position: absolute;
     font-size: 22px;
     color: #fff;
     justify-content: center;
-    align-items: center; /**/
-    /* margin-top: 45px;
-    left: 28%; */
+    align-items: center;
     top: 45px;
     left: 0;
     width: 100%;
     text-align: center;
 }
-
-/* ================== .card-container ================= */
-/* card-container, para deixar os card responsivos automaticamente */
-/* flex-wrap: wrap, para mover os cards para a próxima "linha", quando não houver espaço */
-/* jsutify-content, para alinhar os cards automaticamente*/
-/* ==================================================== */
 
 .card-container {
     position: relative;
@@ -103,26 +88,6 @@ nav a:hover{
 .card-container .card {
     margin: 0 10px;
 }
-
-/*==== removidos =====*/
-/* 
-.container .card{
-    position: relative;
-    margin-top: 110px;
-}
-
-.container .card.img4 {
-    position: absolute;
-    margin-top: 700px;
-    margin-left: 19%;
-}
-
-.container .card.img5 {
-    position: absolute;
-    margin-top: 700px;
-    margin-left: 58%;
-}
-*/
 
 .container .card .face{
     width: 350px;
