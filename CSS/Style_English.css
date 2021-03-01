@@ -1,5 +1,5 @@
 body{
-    margin: 0;
+    margin: 0px;
     padding: 0;
     min-height: 70vh;
     background: #333;
@@ -10,6 +10,7 @@ body{
 }
 
 .container{
+    top: 0;
     width: 1200px;
     position: relative;
     display: flex;
@@ -24,9 +25,10 @@ header{
     background-color: #333;
     padding: 10px;
     position: absolute;
-    height: 5%;
+    height: 55px;
     width: 100%;
-    box-shadow:  0px 3px 0px 0px rgb(79, 79, 79) ;
+    box-shadow:  0px 3px 0px 0px rgb(79, 79, 79);
+    box-sizing: border-box;
 }
 
 .btn-abrir{
@@ -35,7 +37,7 @@ header{
 }
 
 nav{
-    height: 35%;
+    height: 45%;
     width: 0;
     background: #333;
     position: fixed;
@@ -62,25 +64,22 @@ nav a:hover{
     color: #fff;
     justify-content: center;
     align-items: center;
-    margin-top: 45px;
-    left: 28%;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
-.container .card{
+.card-container {
     position: relative;
-    margin-top: 110px;
+    margin-top: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.container .card.img4 {
-    position: absolute;
-    margin-top: 650px;
-    margin-left: 19%;
-}
-
-.container .card.img5 {
-    position: absolute;
-    margin-top: 650px;
-    margin-left: 58%;
+.card-container .card {
+    margin: 0 10px;
 }
 
 .container .card .face{
@@ -133,12 +132,12 @@ nav a:hover{
     opacity: 1;
 }
 
-/*Inverte as cores, baseado em porcentagem*/
 .container .card .face.face1 .content img{
     filter: invert(100%);
     height: 100px;
     max-width: 100px;
-    padding-left: 35px;
+    display: block;
+    margin: auto;
 }
 
 .container .card .face.face1 .content h3{
@@ -190,4 +189,14 @@ nav a:hover{
     width: 60px;
     height: 40px;
     padding-left: 130px;
+}
+
+@media (max-width: 520px) {
+    .tit{
+        font-size: 18px;
+    }
+
+    .card-container {
+        margin-top: 160px;
+    }
 }
