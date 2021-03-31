@@ -2,7 +2,7 @@
 
 My First project I decided use my sister's passion per naruto for explain about five countris Shinobi in two languages for trainning my english.🙂
 
-# Technology I used in this project
+# Technologys I used in this project
 * HTML5 ✔
 * CSS3 ✔
 * Javascript ✔
