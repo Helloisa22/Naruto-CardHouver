@@ -12,6 +12,5 @@ https://tudosobrenaruto.netlify.app 🐱‍👤
 
 # What is the importance of this project
 This project was developed for work my skills with the main technologies for the development Front-End.
-Em breve mais projetos e atualizações, espero que gostem.
 
 Coming soon more projects and update, I hope you enjoy it.🤗
